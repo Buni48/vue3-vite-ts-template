@@ -1,0 +1,20 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#2d702e",
+    "titleBar.activeBackground": "#17a94a",
+    "titleBar.activeForeground": "#d6eee3"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "javascript.format.enable": true,
+  "html.format.enable": true,
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "files.insertFinalNewline": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}
