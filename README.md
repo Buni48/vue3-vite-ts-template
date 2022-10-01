@@ -46,9 +46,3 @@ npm run build
 ```
 npm run update
 ```
-
-This requires `npm-check` to be globally installed. If you don't have it installed first run:
-
-```
-npm install --global npm-check
-```
