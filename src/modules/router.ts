@@ -1,7 +1,6 @@
 import {createRouter, createWebHashHistory} from 'vue-router';
 import Error404 from '../views/Error404.vue';
 import Home from '../views/Home.vue';
-import Song from '../views/Song.vue';
 
 export const install = (app: any) => {
   const pages = ['imprint'];
