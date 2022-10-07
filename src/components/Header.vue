@@ -2,11 +2,11 @@
 </script>
 
 <template>
-    <header>
-      <RouterLink to="/">
-        Vue3 Vite Typescript Project Template
-      </RouterLink>
-    </header>
+  <header>
+    <RouterLink to="/">
+      Vue3 Vite Typescript Project Template
+    </RouterLink>
+  </header>
 </template>
 
 <style lang="scss" scoped>

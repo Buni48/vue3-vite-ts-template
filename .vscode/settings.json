@@ -12,6 +12,7 @@
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
   },
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
   "javascript.format.enable": true,
   "html.format.enable": true,
   "html.format.wrapAttributes": "force-expand-multiline",
