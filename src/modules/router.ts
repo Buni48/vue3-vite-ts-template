@@ -4,7 +4,8 @@ import Home from '../views/Home.vue';
 
 export const install = (app: any) => {
   const pages = ['imprint'];
-  const capitalize = ([first, ...rest] : string) => first.toUpperCase() + rest.join('');
+  const capitalize = ([first, ...rest]: string) =>
+    first.toUpperCase() + rest.join('');
 
   // define some routes
   const routes = [
