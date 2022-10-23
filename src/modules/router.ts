@@ -1,21 +1,21 @@
 import {createRouter, createWebHashHistory} from 'vue-router';
-import Error404 from '../views/Error404.vue';
-import Home from '../views/Home.vue';
+import Error404 from '../templates/Error404.vue';
 
 export const install = (app: any) => {
-  const pages = ['imprint'];
-  const capitalize = ([first, ...rest]: string) =>
-    first.toUpperCase() + rest.join('');
+  // Auto generates routes from vue files under ./views
+  const views = import.meta.glob('../views/*.vue');
 
-  // define some routes
+  const generatedRoutes = Object.keys(views).map((path: any) => {
+    const name = path.match(/\.\/views(.*)\.vue$/)[1].toLowerCase();
+    return {
+      name: name,
+      path: name === '/home' ? '/' : name,
+      component: views[path], // () => import('./views/*.vue')
+    };
+  });
+
   const routes = [
-    {name: 'home', path: '/', component: Home},
-    ...pages.map((page) => ({
-      name: page,
-      path: `/${page}`,
-      component: () =>
-        import(`../views/${capitalize(page as any)}.vue`).catch(() => Error404),
-    })),
+    ...generatedRoutes,
     {name: 'error404', path: '/:pathMatch(.*)*', component: Error404},
   ];
 
