@@ -8,7 +8,7 @@ export const install = (app: any) => {
   const generatedRoutes = Object.keys(views).map((path: any) => {
     const name = path.match(/\.\/views(.*)\.vue$/)[1].toLowerCase();
     return {
-      name: name,
+      name: name.substring(1),
       path: name === '/home' ? '/' : name,
       component: views[path], // () => import('./views/*.vue')
     };
