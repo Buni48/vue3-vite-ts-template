@@ -1,4 +1,4 @@
-import {createRouter, createWebHashHistory} from 'vue-router';
+import {createRouter, createWebHistory} from 'vue-router';
 import Error404 from '../templates/Error404.vue';
 
 export const install = (app: any) => {
@@ -21,7 +21,7 @@ export const install = (app: any) => {
 
   // create router instance and pass the `routes` option
   const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes,
   });
 
