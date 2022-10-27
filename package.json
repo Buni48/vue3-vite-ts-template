@@ -2,6 +2,7 @@
   "name": "vue3-vite-ts-template",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "build": "vue-tsc --noEmit && vite build",
