@@ -14,10 +14,7 @@ export const install = (app: any) => {
     };
   });
 
-  const routes = [
-    ...generatedRoutes,
-    {name: 'error404', path: '/:pathMatch(.*)*', component: Error404},
-  ];
+  const routes = [...generatedRoutes, {name: 'error404', path: '/:pathMatch(.*)*', component: Error404}];
 
   // create router instance and pass the `routes` option
   const router = createRouter({
