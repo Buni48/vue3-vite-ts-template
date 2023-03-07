@@ -6,7 +6,6 @@ import Pages from 'vite-plugin-pages';
 export default {
   resolve: {
     alias: {
-      vue: 'vue/dist/vue.esm-bundler.js',
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
