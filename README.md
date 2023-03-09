@@ -15,10 +15,13 @@ A basic starter template for a Vue3 website using Vite, TypeScript and SCSS.
 - [VueUse](https://vueuse.org/)
 - [Unplugin Vue Components](https://www.npmjs.com/package/unplugin-vue-components)
 
+This template uses client-side rendering (CSR). If you want static-site generation (SSG) instead checkout the `main` branch.
+
 ## Recommended IDE Setup
 
 The recommended IDE is [VSCode](https://code.visualstudio.com/) using the following extensions:
-- [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+
+- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
