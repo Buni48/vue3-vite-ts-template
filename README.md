@@ -8,6 +8,7 @@ A basic starter template for a Vue3 website using Vite, TypeScript and SCSS.
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [SCSS](https://sass-lang.com/)
+- [pnpm](https://pnpm.io/)
 
 ### Used packages
 
@@ -30,24 +31,28 @@ The recommended IDE is [VSCode](https://code.visualstudio.com/) using the follow
 
 ## Project setup
 
-```
-npm install
+```bash
+npm i -g pnpm # install pnpm
+pnpm i
 ```
 
 ### Compiles and hot-reloads for development
 
-```
-npm start
+Just run and visit http://localhost:3000
+
+```bash
+pnpm dev
 ```
 
 ### Build for production site
 
-```
-npm run build
+```bash
+pnpm build
 ```
 
 ### Update dependencies
 
-```
-npm run update
+```bash
+# add --latest to update ignoring ranges specified in package.json
+pnpm up
 ```

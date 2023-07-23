@@ -24,6 +24,7 @@
     "eslint-plugin-jsdoc": "^46.4.4",
     "eslint-plugin-vue": "^9.15.1",
     "npm-check": "^6.0.1",
+    "pnpm": "^8.6.9",
     "prettier": "^3.0.0",
     "sass": "^1.64.1",
     "typescript": "^5.1.6",
