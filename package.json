@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
-    "build": "vue-tsc --noEmit && vite-ssg build",
-    "update": "npm-check --skip-unused -u"
+    "build": "vue-tsc --noEmit && vite-ssg build"
   },
   "dependencies": {
     "@vueuse/core": "^10.2.1",
