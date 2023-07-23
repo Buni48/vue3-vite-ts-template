@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "dev": "vite --port 3000",
     "build": "vue-tsc --noEmit && vite-ssg build",
     "update": "npm-check --skip-unused -u"
   },
