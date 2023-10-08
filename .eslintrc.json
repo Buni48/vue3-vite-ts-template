@@ -4,24 +4,16 @@
     "es6": true,
     "commonjs": true
   },
+  "parser": "vue-eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 11,
-    "ecmaFeatures": {
-      "jsx": false
-    },
-    "sourceType": "module"
+    "parser": "@typescript-eslint/parser"
   },
   "globals": {
     "__dirname": "readonly",
     "__pathname": "readonly"
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:storybook/recommended",
-    "plugin:vue/vue3-recommended",
-    "plugin:jsdoc/recommended",
-    "prettier"
-  ],
+  "extends": ["plugin:vue/strongly-recommended", "eslint:recommended", "@vue/typescript/recommended", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     "no-use-before-define": "off",
     "curly": "error",
@@ -72,20 +64,15 @@
         "anonymous": "never"
       }
     ],
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
     "vue/html-self-closing": "off",
     "vue/multi-word-component-names": "off",
     "vue/multiline-html-element-content-newline": "off",
     "vue/singleline-html-element-content-newline": "off",
     "vue/mustache-interpolation-spacing": "off",
     "vue/component-definition-name-casing": "off",
-    "vue/max-attributes-per-line": [
-      "warn",
-      {
-        "multiline": {
-          "allowFirstLine": true
-        }
-      }
-    ],
+    "vue/max-attributes-per-line": 1,
     "vue/html-closing-bracket-newline": "off",
     "vue/no-deprecated-slot-attribute": "off",
     "vue/no-v-html": "off",
