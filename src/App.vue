@@ -3,11 +3,13 @@ import './assets/css/base.scss';
 </script>
 
 <template>
-  <Header />
-  <main>
-    <RouterView />
-  </main>
-  <Footer />
+  <div>
+    <Header />
+    <main>
+      <RouterView />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <style lang="scss" scoped>
